@@ -13,12 +13,14 @@
                  [ring.middleware.logger "0.5.0"]
                  [compojure "1.5.0"]
                  [environ "1.0.3"]
-                 [reagent "0.6.0-rc"]]
+                 [reagent "0.6.0-rc"]
+                 [org.seleniumhq.selenium/selenium-java "2.43.0"]]
 
   :plugins [[lein-cljsbuild "1.1.3"]
             [lein-environ "1.0.3"]
             [lein-sassc "0.10.4"]
-            [lein-auto "0.1.2"]]
+            [lein-auto "0.1.2"]
+            [org.clojars.punkisdead/lein-cucumber "1.0.7"]]
 
   :min-lein-version "2.6.1"
 

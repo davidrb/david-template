@@ -20,6 +20,9 @@
 
              ["dev/user.clj" (render "dev/user.clj" data)]
 
+             ["features/test.feature" (render "features/test.feature" data)]
+             ["features/step_definitions/test_steps.clj" (render "features/step_definitions/test_steps.clj" data)]
+
              ["resources/log4j.properties" (render "resources/log4j.properties" data)]
              ["resources/public/index.html" (render "resources/public/index.html" data)]
 
@@ -28,8 +31,8 @@
              ["src/cljs/{{sanitized}}/core.cljs" (render "src/cljs/david_template/core.cljs" data)]
              ["src/scss/style.scss" (render "src/scss/style.scss" data)]
 
-             ["test/clj/{{sanitized}}/server.clj" (render "test/clj/david_template/example_test.clj" data)]
-             ["test/cljc/{{sanitized}}/common.cljc" (render "test/cljc/david_template/common_test.cljc" data)]
+             ["test/clj/{{sanitized}}/example_test.clj" (render "test/clj/david_template/example_test.clj" data)]
+             ["test/cljc/{{sanitized}}/common_test.cljc" (render "test/cljc/david_template/common_test.cljc" data)]
              ["test/cljs/{{sanitized}}/core_test.cljs" (render "test/cljs/david_template/core_test.cljs" data)]
              ["test/cljs/{{sanitized}}/test_runner.cljs" (render "test/cljs/david_template/test_runner.cljs" data)])))
 
