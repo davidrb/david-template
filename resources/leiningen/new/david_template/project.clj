@@ -14,6 +14,7 @@
                  [compojure "1.5.0"]
                  [environ "1.0.3"]
                  [reagent "0.6.0-rc"]
+                 [re-frame "0.9.2"]
                  [devcards "0.2.1"]
                  [org.seleniumhq.selenium/selenium-java "2.43.0"]]
 
