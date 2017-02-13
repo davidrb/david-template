@@ -46,7 +46,7 @@
               [{:id "app"
                 :source-paths ["src/cljs" "src/cljc"]
 
-                :figwheel true
+                :figwheel {:websocket-host :js-client-host}
                 ;; Alternatively, you can configure a function to run every time figwheel reloads.
                 ;; :figwheel {:on-jsload "{{name}}.core/on-figwheel-reload"}
 
@@ -58,7 +58,8 @@
 
                {:id "devcards"
                 :source-paths ["src/cljs"]   
-                :figwheel { :devcards true } ;; <- note this
+                :figwheel {:websocket-host :js-client-host
+                           :devcards true}
                 :compiler { :main    "{{name}}.core"
                            :asset-path "js/compiled/devcards_out"
                            :output-to  "resources/public/js/compiled/{{name}}_devcards.js"
