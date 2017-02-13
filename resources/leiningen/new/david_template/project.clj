@@ -14,6 +14,7 @@
                  [compojure "1.5.0"]
                  [environ "1.0.3"]
                  [reagent "0.6.0-rc"]
+                 [devcards "0.2.1"]
                  [org.seleniumhq.selenium/selenium-java "2.43.0"]]
 
   :plugins [[lein-cljsbuild "1.1.3"]
@@ -53,6 +54,15 @@
                            :output-to "resources/public/js/compiled/{{sanitized}}.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true}}
+
+               {:id "devcards"
+                :source-paths ["src/cljs"]   
+                :figwheel { :devcards true } ;; <- note this
+                :compiler { :main    "{{name}}.core"
+                           :asset-path "js/compiled/devcards_out"
+                           :output-to  "resources/public/js/compiled/{{name}}_devcards.js"
+                           :output-dir "resources/public/js/compiled/devcards_out"
+                           :source-map-timestamp true }}
 
                {:id "test"
                 :source-paths ["src/cljs" "test/cljs" "src/cljc" "test/cljc"]

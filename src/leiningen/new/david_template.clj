@@ -26,6 +26,7 @@
 
              ["resources/log4j.properties" (render "resources/log4j.properties" data)]
              ["resources/public/index.html" (render "resources/public/index.html" data)]
+             ["resources/public/devcards.html" (render "resources/public/devcards.html" data)]
 
              ["src/clj/{{sanitized}}/server.clj" (render "src/clj/david_template/server.clj" data)]
              ["src/cljc/{{sanitized}}/common.cljc" (render "src/cljc/david_template/common.cljc" data)]
