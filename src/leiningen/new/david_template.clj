@@ -21,6 +21,7 @@
              ["dev/user.clj" (render "dev/user.clj" data)]
 
              ["features/test.feature" (render "features/test.feature" data)]
+             ["features/step_definitions/features.clj" (render "features/step_definitions/features.clj" data)]
              ["features/step_definitions/test_steps.clj" (render "features/step_definitions/test_steps.clj" data)]
 
              ["resources/log4j.properties" (render "resources/log4j.properties" data)]
