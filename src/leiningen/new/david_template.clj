@@ -20,9 +20,12 @@
 
              ["dev/user.clj" (render "dev/user.clj" data)]
 
-             ["features/test.feature" (render "features/test.feature" data)]
-             ["features/step_definitions/features.clj" (render "features/step_definitions/features.clj" data)]
-             ["features/step_definitions/test_steps.clj" (render "features/step_definitions/test_steps.clj" data)]
+             ["features/greeting.feature" (render "features/greeting.feature" data)]
+             ["features/step_definitions/greeting_steps.clj" (render "features/step_definitions/greeting_steps.clj" data)]
+             ["features/step_definitions/setup.clj" (render "features/step_definitions/setup.clj" data)]
+
+             ["test/features/{{sanitized}}/pages/core.clj" (render "test/features/david_template/pages/core.clj" data)]
+             ["test/features/{{sanitized}}/pages/index.clj" (render "test/features/david_template/pages/index.clj" data)]
 
              ["resources/log4j.properties" (render "resources/log4j.properties" data)]
              ["resources/public/index.html" (render "resources/public/index.html" data)]

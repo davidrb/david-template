@@ -138,6 +138,9 @@
               :source-paths ["dev"]
               :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}
 
+             :test
+             {:source-paths ["test/features"]}
+
              :uberjar
              {:source-paths ^:replace ["src/clj" "src/cljc"]
               :prep-tasks ["compile" ["cljsbuild" "once" "min"]]
