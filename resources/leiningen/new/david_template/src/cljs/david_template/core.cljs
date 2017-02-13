@@ -16,3 +16,6 @@
 (defn ^:export main []
   (r/render [simple-component]
             (js/document.getElementById "app")))
+
+(defn js-reload []
+  (main))
