@@ -110,15 +110,16 @@
   :sassc [{:src "src/scss/style.scss"
            :output-to "resources/public/css/style.css"}]
 
-  :auto {"sassc" {:file-pattern  #"\.(scss)$"}}
+  :auto {"sassc" {:file-pattern  #"\.(scss)$"
+                  :paths ["src/scss"]}}
 
   :profiles {:dev
-             {:dependencies [[figwheel "0.5.4-4"]
-                             [figwheel-sidecar "0.5.4-4"]
+             {:dependencies [[figwheel "0.5.9"]
+                             [figwheel-sidecar "0.5.9"]
                              [com.cemerick/piggieback "0.2.1"]
                              [org.clojure/tools.nrepl "0.2.12"]]
 
-              :plugins [[lein-figwheel "0.5.4-4"]
+              :plugins [[lein-figwheel "0.5.9"]
                         [lein-doo "0.1.6"]]
 
               :source-paths ["dev"]
