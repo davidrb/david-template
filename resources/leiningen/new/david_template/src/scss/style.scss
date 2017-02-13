@@ -1,5 +1,11 @@
-@charset "UTF-8";
+@charset "utf-8";
 
-h1 {
-  text-decoration: underline;
+.simple-component {
+  &__bold {
+    font-weight: bold;
+  }
+
+  &__red {
+    color: red;
+  }
 }
