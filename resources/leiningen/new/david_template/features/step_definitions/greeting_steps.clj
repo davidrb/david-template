@@ -1,5 +1,8 @@
 (require '[{{name}}.pages.index :as page])
 
+(When #"^The name field is empty$" []
+  (page/enter-name ""))
+
 (When #"^The user enters '(.+)' into the name field$" [name]
   (page/enter-name name))
 
